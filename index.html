@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Password generator app</title>
+</head>
+<body>
+
+  <div id="password-generator">
+    <h1>Password Generator</h1>
+    <div class="result-board container">
+      <h2 class="generatedPassword"></h2>
+      <div class="toClip">
+        <img src="assets/images/icon-copy.svg" alt="copy">
+      </div>
+      </div>
+      <form class="form container" >
+        <div class="length-block">
+          <div class="title-length">
+            <h3>Character Length</h3>
+            <p class="showBoard"></p>
+          </div>
+          <div class="field-length">
+            <input type="range" name="length-input" id="length" min="4" max="20" value=8>        
+          </div>        
+    
+        </div>
+        <ul class="options-list">
+          <li class="option">
+            <label for="uppercase">
+              <input type="checkbox" id="uppercase" name="element" value="uppercase" />Include Uppercase Letters 
+            </label>
+          </li>
+          <li class="option">
+            <label for="lowercase">
+              <input type="checkbox" id="lowercase" name="element" value="lowercase" checked/>Include Lowercase Letters
+            </label>
+          </li>
+          <li class="option">
+            <label for="numbers">
+              <input type="checkbox" id="numbers" name="element" value="numbers"/>Include Numbers 
+            </label>
+          </li>
+          <li class="option">
+            <label for="symbols">
+              <input type="checkbox" id="symbols" name="element" value="symbols"/>Include Symbols 
+            </label>
+          </li>
+        </ul>
+        <div class="strength-block">
+          <p>STRENGTH:</p>
+          <div class="graphic-section">            
+            <p class="strength-Level"></p>
+            <div class="graph-block">
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+              <div class="icon"></div>
+            </div>
+
+          </div>  
+        </div>
+        <button type="button" class="btn"> Generate <img src="assets/images/icon-arrow-right.svg" alt="arrow"></button>
+       
+      </form>
+    </div>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "JetBrainsMono-Italic";
+    src: url("assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf")format('truetype');
+}
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url("assets/fonts/JetBrainsMono-VariableFont_wght.ttf")format('truetype');
+}
+
+
+
+/*----css reset-------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----css reset-------*/
+
+/*----universal------*/
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "JetBrainsMono";
+    font-size: 1rem;
+    }
+
+h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/*--typography------*/
+body{
+       color: #E6E5EA;
+       background-color: #18171F;
+}
+.result-board{
+    background-color: #24232C;
+    margin-bottom: 1.5rem;
+}
+.form{
+    background-color: #24232C;
+}
+h1{
+    color:#817d92;
+}
+.showBoard{
+    color:#A4FFAF;
+}
+
+
+/*----length-block----*/
+/*-change range slide style--*/
+.field-length input{ 
+    -webkit-appearance: none;  
+    border-radius: 0;   
+}
+
+.field-length input::-webkit-slider-thumb {
+    -webkit-appearance: none; /*清除默认样式*/
+    height: 1.5rem; 
+    width: 1.5rem; 
+    background: #E6E5EA; 
+    border-radius: 50% 50%; 
+    margin-top: -.3rem;;
+    
+  }
+  
+  .field-length input::-webkit-slider-runnable-track {
+    border-radius: 30px;
+    background: #A4FFAF;
+    height: 15px;
+  }  
+
+/*----options-list---*/  
+/*---change checkbox style----*/
+.option input{
+    -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc; /* checkbox的邊框顏色 */
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 .5rem -0.2rem 0;
+}
+
+
+/* 設定checkbox選中時的背景顏色 */
+.option input:checked {
+  background-image: url(assets/images/icon-check.svg);
+  background-position: center;
+  background-size: cover;
+  background-color:#A4FFAF;
+}
+
+/* 設定checkbox的hover樣式 */
+.option input:hover {
+  border-color: #888; /* hover時的邊框顏色 */
+}
+/*----btn--*/
+.btn{
+    background-color: #A4FFAF;
+    color:#18171F;
+    font-weight: bold;
+    /*--remove button defalut style--*/
+    border-style: none;
+}
+/*-----layout-----*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container{
+    padding: 0 2rem;    
+}
+#password-generator{
+    max-width: 45%;  
+}
+
+h1{
+    text-align: center;
+}
+/*---title----*/
+h1{
+    margin-bottom: 1.9rem;
+}
+/*----form-----*/
+.form{
+    padding:1.5rem 2rem 2rem 2rem ;
+}
+/*----result-board----*/
+.result-board{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.1875rem;
+    padding-bottom: 1.1875rem;
+   
+}
+.toClip{
+    margin-left: 0.5em;
+}
+/*----length-block----*/
+.title-length{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.length-block{
+    margin-bottom: 2rem;
+}
+.field-length input{
+   
+    width:98%;
+}
+/*----options-list---*/
+.option{
+    margin-bottom: 1.25rem;
+}
+/*-----PasswordStrength----*/
+
+
+/*--btn--*/
+.btn{
+    
+    width: 100%;
+    padding:1.3125rem  0;
+}
+
+/*----strength-block-----*/
+.strength-block{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #18171F;
+    padding:1.5625rem 2rem 1.4375rem 2rem ;
+    margin-bottom: 2rem;
+}
+.graphic-section{
+    display: flex;
+    align-items: center;
+    gap:1em;
+}
+.graph-block{
+    display:flex;
+    gap:0.5rem;    
+}
+.icon{
+    border:#E6E5EA 2px solid;
+    width:0.5rem;
+    height: 1rem;
+   
+}
+
+/*----bar color-----*/
+.strong{
+    background-color: #A4FFAF;
+}
+.medium{
+    background-color: #F8CD65;
+}
+.weak{
+    background-color: #FB7C58;
+}
+.veryWeak{
+    background-color: #F64A4A;
+}
+@media(max-width:900px) {
+    #password-generator{
+        max-width: 60%;  
+    }
+    
+}
+@media(max-width:600px) {
+    #password-generator{
+        max-width: 90%;  
+    }
+    
+}
+@media(max-width:350px) {
+    #password-generator{
+        max-width: 95%;  
+    }
+    :root{
+        font-size: 12px;
+    }
+    
+}
