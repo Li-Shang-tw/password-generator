@@ -108,7 +108,8 @@ body{
     padding: 0 2rem;    
 }
 #password-generator{
-    max-width: 45%;  
+    max-width: 45%; 
+    min-width: 30%; /*---解決因勾選選項而放大縮小的問題*/
 }
 
 h1{
