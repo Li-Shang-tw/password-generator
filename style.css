@@ -101,7 +101,7 @@ h1{
 /*-change range slide style--*/
 .field-length input{ 
     -webkit-appearance: none;  
-    border-radius: 0;   
+    border-radius: 30px;   
 }
 
 .field-length input::-webkit-slider-thumb {
