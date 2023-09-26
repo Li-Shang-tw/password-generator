@@ -201,9 +201,8 @@ h1{
 .length-block{
     margin-bottom: 2rem;
 }
-.field-length input{
-   
-    width:98%;
+.field-length input{   
+    width:100%;
 }
 
 /*----options-list---*/
