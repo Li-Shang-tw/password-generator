@@ -191,6 +191,7 @@ h1{
 .toClip{
     margin-left: 0.5em;
 }
+
 /*----length-block----*/
 .title-length{
     display: flex;
@@ -204,11 +205,11 @@ h1{
    
     width:98%;
 }
+
 /*----options-list---*/
 .option{
     margin-bottom: 1.25rem;
 }
-/*-----PasswordStrength----*/
 
 
 /*--btn--*/
@@ -256,6 +257,14 @@ h1{
 .veryWeak{
     background-color: #F64A4A;
 }
+
+
+/*----報錯的樣式----*/
+.error__msg{
+    color:#F64A4A;
+    font-weight: 900;
+}
+
 @media(max-width:900px) {
     #password-generator{
         max-width: 60%;  
@@ -277,3 +286,4 @@ h1{
     }
     
 }
+

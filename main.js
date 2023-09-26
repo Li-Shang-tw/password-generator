@@ -114,11 +114,16 @@ function decidePasswordStrength(lenPassword,options){
     //例外處理,沒有勾選條件
     //並且在重新設計密碼時,清空舊密碼
     if(options.length==0){
-        alert("Please select at leat one option");
-        document.querySelector(".generatedPassword").textContent ="no"
+        alert("Please select at least one option");
+        document.querySelector(".generatedPassword").textContent ="Please select at least one option";
+        //加上報錯的樣式
+        document.querySelector(".generatedPassword").classList.add("error__msg");
+
 
     }else{
-        document.querySelector(".generatedPassword").textContent =""
+        document.querySelector(".generatedPassword").textContent ="";
+        //移除報錯的樣式
+        document.querySelector(".generatedPassword").classList.remove("error__msg");
     }
     
     //顯示強度的位置
